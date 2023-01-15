@@ -10,28 +10,25 @@ const workArray = [
     title: "Community Champions",
     subtitle: "MongoDB",
     description: "I supported the expansion of MongoDB's Community Champions program globally by building a landing page, Champion profile pages and an application form.",
-    buttonText: "View Project",
-    url: "https://www.mongodb.com/community/forums/champions/",
+    projectUrl: "https://www.mongodb.com/community/forums/champions/",
+    url: "https://www.mongodb.com/blog/post/intern-series-making-remote-work-meaningful-meet-sophia-li",
   },
   {
     title: "Technical Service Details",
     subtitle: "PagerDuty",
     description: "I contributed to building PagerDuty's service directory on Android by building the UI for service details.",
-    buttonText: "Read More",
     url: "https://sophiali23.github.io/old-portfolio/pagerduty.html",
   },
   {
     title: "Hack Day",
     subtitle: "PagerDuty",
     description: "I participated in Hack Days at PagerDuty where I got to build features like editing schedule colours and sharing incidents on different platforms. My hack for incident sharing won Best Product Enhancement.",
-    buttonText: "Read More",
     url: "https://sophiali23.github.io/old-portfolio/pagerdutyHacks.html",
   },
   {
     title: "Paid Stories Onboarding",
     subtitle: "Wattpad",
-    description: "I supported the launch of Wattpad's paid stories program, a program that allows writers to monetize their work, by building an onboarding carousel to introduce it to users.",
-    buttonText: "Read More",
+    description: "I supported the launch of Wattpad's Paid Stories program, a program that allows writers to monetize their work, by building an onboarding carousel to introduce it to users.",
     url: "https://sophiali23.github.io/old-portfolio/wattpad.html",
   }
 ]

@@ -10,6 +10,7 @@ const WorkCard = ({ value }) => {
     subtitle,
     description,
     buttonText,
+    projectUrl,
     url,
   } = value;
   return (
@@ -20,21 +21,29 @@ const WorkCard = ({ value }) => {
           <Card.Text>{(!subtitle) ? "" : subtitle || <Skeleton count={3} />} </Card.Text>
           <hr />
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          <CardButtons buttonText={buttonText} url={url} />
+          <CardButtons buttonText={buttonText} projectUrl={projectUrl} url={url} />
         </Card.Body>
       </Card>
     </Col>
   );
 };
 
-const CardButtons = ({ buttonText, url }) => {
+const CardButtons = ({ projectUrl, url }) => {
   return (
     <div className="d-grid gap-2 d-md-block">
+      {projectUrl && 
+        <a
+          href={projectUrl ? projectUrl : ''}
+          className="btn btn-outline-secondary mx-2"
+        >
+          View Project
+        </a>
+      }
       <a
         href={url ? url : ''}
         className="btn btn-outline-secondary mx-2"
       >
-        {buttonText}
+        Read More
       </a>
     </div>
   );
