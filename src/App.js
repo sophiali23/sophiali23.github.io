@@ -4,6 +4,7 @@ import {
   navBar,
   mainBody,
   about,
+  work,
   repos,
   leadership,
   skills,
@@ -12,6 +13,7 @@ import {
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
+import Work from "./components/home/Work";
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -47,6 +49,11 @@ const Home = React.forwardRef((props, ref) => {
           <Experience experiences={experiences}/>
         )
       }
+      {work.show && (
+        <Work
+          heading={work.heading}
+        />
+      )}
       {repos.show && (
         <Project
           heading={repos.heading}
