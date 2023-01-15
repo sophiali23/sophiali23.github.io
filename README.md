@@ -5,7 +5,7 @@
 
   <p align="center">
     A personal static website/portfolio hosted with GitHub Pages, built to showcase my recent projects.
-    <a href="https://hashirshoaeb.github.io">sophiali23.github.io</a>
+    <a href="https://sophiali23.github.io">sophiali23.github.io</a>
     <br />
   </p>
 </p>
