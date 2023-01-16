@@ -17,19 +17,19 @@ const workArray = [
     title: "Technical Service Details",
     subtitle: "PagerDuty",
     description: "I contributed to building PagerDuty's service directory on Android by building the UI for service details.",
-    url: "https://sophiali23.github.io/old-portfolio/pagerduty.html",
+    path: "/pagerduty",
   },
   {
     title: "Hack Day",
     subtitle: "PagerDuty",
     description: "I participated in Hack Days at PagerDuty where I got to build features like editing schedule colours and sharing incidents on different platforms. My hack for incident sharing won Best Product Enhancement.",
-    url: "https://sophiali23.github.io/old-portfolio/pagerdutyHacks.html",
+    path: "/pagerduty-hacks",
   },
   {
     title: "Paid Stories Onboarding",
     subtitle: "Wattpad",
     description: "I supported the launch of Wattpad's Paid Stories program, a program that allows writers to monetize their work, by building an onboarding carousel to introduce it to users.",
-    url: "https://sophiali23.github.io/old-portfolio/wattpad.html",
+    path: "/wattpad",
   }
 ]
 

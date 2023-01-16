@@ -24,6 +24,9 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
+import PagerDutyWork from "./pages/PagerDutyWork.jsx";
+import PagerDutyHackDays from "./pages/PagerDutyHackDays.jsx";
+import WattpadWork from "./pages/WattpadWork.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -90,6 +93,9 @@ const App = () => {
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
+        <Route path="/pagerduty" element={<PagerDutyWork/>}/>
+        <Route path="/pagerduty-hacks" element={<PagerDutyHackDays/>}/>
+        <Route path="/wattpad" element={<WattpadWork/>}/>
       </Routes>
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}

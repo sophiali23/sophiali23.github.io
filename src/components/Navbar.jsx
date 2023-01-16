@@ -16,9 +16,13 @@ const Navigation = React.forwardRef((props, ref) => {
   useScrollPosition(
     ({ prevPos, currPos }) => {
       if (!navbarDimensions) return;
-      currPos.y + ref.current.offsetTop - navbarDimensions.bottom > 5
+      if (!ref.current) {
+        setIsTop(false);
+      } else {
+        currPos.y + ref.current.offsetTop - navbarDimensions.bottom > 5
         ? setIsTop(true)
         : setIsTop(false);
+      }
       setScrollPosition(currPos.y);
     },
     [navBottom]
@@ -26,9 +30,13 @@ const Navigation = React.forwardRef((props, ref) => {
 
   React.useEffect(() => {
     if (!navbarDimensions) return;
-    navBottom - scrollPosition >= ref.current.offsetTop
+    if (!ref.current) {
+      setIsTop(false);
+    } else {
+      navBottom - scrollPosition >= ref.current.offsetTop
       ? setIsTop(false)
-      : setIsTop(true);
+      : setIsTop(true)
+    }
   }, [navBottom, navbarDimensions, ref, scrollPosition]);
 
   return (

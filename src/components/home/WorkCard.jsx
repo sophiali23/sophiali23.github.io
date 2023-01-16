@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
+import { Link } from 'react-router-dom';
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
-import axios from "axios";
 
 const WorkCard = ({ value }) => {
   const {
@@ -12,6 +12,7 @@ const WorkCard = ({ value }) => {
     buttonText,
     projectUrl,
     url,
+    path,
   } = value;
   return (
     <Col md={6}>
@@ -21,30 +22,33 @@ const WorkCard = ({ value }) => {
           <Card.Text>{(!subtitle) ? "" : subtitle || <Skeleton count={3} />} </Card.Text>
           <hr />
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          <CardButtons buttonText={buttonText} projectUrl={projectUrl} url={url} />
+          <CardButtons buttonText={buttonText} projectUrl={projectUrl} url={url} path={path} />
         </Card.Body>
       </Card>
     </Col>
   );
 };
 
-const CardButtons = ({ projectUrl, url }) => {
+const CardButtons = ({ projectUrl, url, path }) => {
   return (
     <div className="d-grid gap-2 d-md-block">
       {projectUrl && 
         <a
-          href={projectUrl ? projectUrl : ''}
+          href={projectUrl}
           className="btn btn-outline-secondary mx-2"
         >
           View Project
         </a>
       }
-      <a
-        href={url ? url : ''}
-        className="btn btn-outline-secondary mx-2"
-      >
-        Read More
-      </a>
+      {url && 
+        <a
+          href={url}
+          className="btn btn-outline-secondary mx-2"
+        >
+          Read More
+        </a>
+      }
+      {path && <Link to={path} className="btn btn-outline-secondary mx-2">Read More</Link>}
     </div>
   );
 };
