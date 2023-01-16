@@ -29,14 +29,19 @@ const ImageContainer = styled.div`
     justify-content: center;
 `;
 
+const StyledH2 = styled.div`
+    padding-bottom: 36px;
+`;
+
 const PagerDutyHackDays = () => {
     return (
         <Container>
-            <h2 className="display-4 pb-5 text-center">Hack Day Features</h2>
+            <StyledH2 className="display-4 text-center">Hack Day Features</StyledH2>
             <p className="lead text-center">Software Engineer Intern at PagerDuty, Fall 2019</p>
+            <br/>
             <h4>How do Hack Days work at PagerDuty?</h4>
             <p><Link href="https://www.pagerduty.com/" target="_blank">PagerDuty</Link>, a leader in the incident management space, does company-wide hack days every month. I enjoyed actively participating in these! It gave me the chance to work on whatever I personally found interesting. I spent my hack days building fun features on Android. It was a great experience getting to demo my hacks during hack day presentations as well. I am very excited to have shipped all of the following features! In particular, my Share Incident feature won for Best Product Enhancement and Best Vibe at the December 2019 Hack Day.</p>
-            <br></br>
+            <br/>
             <h4>Edit Schedule Colour</h4>
             <p>Each user has a colour associated with their profile which is used in the on-call schedule to quickly recognize the user. Users can now change this on Android! There is a plethora of colours to choose from! Fun fact: Viridian is our most popular colour :)</p>
             <ImageContainer>
