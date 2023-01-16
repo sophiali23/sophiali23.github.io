@@ -46,8 +46,8 @@ const about = {
   imageLink: require("../editable-stuff/sophiali.jpg"),
   imageSize: 375,
   message:
-    "Hi! I'm a recent University of Waterloo graduate and software engineer with over 2 years of professional experience. I have a strong passion for creating great UX. I previously worked for Meta/Facebook full time, and prior to that I completed software engineering internships at MongoDB, Facebook, PagerDuty, Wattpad, and a couple startups.",
-  resume: "https://drive.google.com/file/d/1L-J8-Ktpxv6PVcCB_4rGLBpVoePsfr3m/view?usp=sharing",
+    "Hi! I'm a recent University of Waterloo graduate and software engineer with over 2 years of professional experience. I have a strong passion for creating great UX. I previously worked for Meta/Facebook full time and prior to that, I completed software engineering internships at MongoDB, Facebook, PagerDuty, Wattpad, and a couple startups. In my free time, I love to do pilates, travel, and spend time with my cat Alfie.",
+  resume: "https://drive.google.com/file/d/1PlQPbNersJ0DzQ8t6nLBW45oLd_yrgCL/view?usp=sharing",
 };
 
 const work = {
@@ -65,7 +65,7 @@ const repos = {
   heading: "Side Projects",
   gitHubUsername: "sophiali23", //i.e."johnDoe12Gh"
   reposLength: 3,
-  specificRepos: [],
+  specificRepos: ["WeatherApp"],
 };
 
 // Leadership SECTION
@@ -128,18 +128,43 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
       role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      companylogo: require('../assets/img/meta.png'),
+      date: 'September 2022 - November 2022',
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Software Engineer Intern',
+      companylogo: require('../assets/img/mongodb.png'),
+      date: 'June 2021 – August 2021',
+    },
+    {
+      role: 'Software Engineer Intern',
+      companylogo: require('../assets/img/facebook.png'),
+      date: 'January 2021 – April 2021',
+    },
+    {
+      role: 'Software Engineer Intern',
+      companylogo: require('../assets/img/inkling.png'),  // Inkling
+      date: 'May 2020 – August 2020',
+    },
+    {
+      role: 'Software Engineer Intern',
+      companylogo: require('../assets/img/pagerduty.png'),  // PagerDuty
+      date: 'September 2019 – December 2019',
+    },
+    {
+      role: 'Software Engineer Intern',
+      companylogo: require('../assets/img/wattpad.png'),  // Wattpad
+      date: 'January 2019 – April 2019',
+    },
+    {
+      role: 'Software Engineer-in-Test Intern',
+      companylogo: require('../assets/img/influitive.png'),  // Influitive
+      date: 'May 2018 – August 2018',
     },
   ]
 }
