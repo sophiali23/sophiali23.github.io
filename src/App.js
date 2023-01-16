@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, {useLayoutEffect} from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import {
   navBar,
   mainBody,
@@ -85,29 +85,39 @@ const Home = React.forwardRef((props, ref) => {
   );
 });
 
+const ScrollToTop = ({children}) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children
+} 
+
 const App = () => {
   const titleRef = React.useRef();
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
-      {navBar.show && <Navbar ref={titleRef} />}
-      <Routes>
-        <Route path="/" exact element={<Home ref={titleRef} />} />
-        <Route path="/pagerduty" element={<PagerDutyWork/>}/>
-        <Route path="/pagerduty-hacks" element={<PagerDutyHackDays/>}/>
-        <Route path="/wattpad" element={<WattpadWork/>}/>
-      </Routes>
-      {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
-      <Footer>
-        {getInTouch.show && (
-          <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
-            email={getInTouch.email}
-          />
-        )}
-      </Footer>
+      <ScrollToTop>
+        {navBar.show && <Navbar ref={titleRef} />}
+        <Routes>
+          <Route path="/" exact element={<Home ref={titleRef} />} />
+          <Route path="/pagerduty" element={<PagerDutyWork/>}/>
+          <Route path="/pagerduty-hacks" element={<PagerDutyHackDays/>}/>
+          <Route path="/wattpad" element={<WattpadWork/>}/>
+        </Routes>
+        {/* {false && <Route path="/blog" exact component={Blog} />}
+        {false && <Route path="/blog/:id" component={BlogPost} />} */}
+        <Footer>
+          {getInTouch.show && (
+            <GetInTouch
+              heading={getInTouch.heading}
+              message={getInTouch.message}
+              email={getInTouch.email}
+            />
+          )}
+        </Footer>
+      </ScrollToTop>
     </BrowserRouter>
   );
 };
