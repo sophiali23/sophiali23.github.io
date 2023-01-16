@@ -64,8 +64,8 @@ const repos = {
   show: true,
   heading: "Side Projects",
   gitHubUsername: "sophiali23", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  reposLength: 0,
+  specificRepos: ["top-tracks", "sophiali23.github.io", "WeatherApp", "To-Do"],
 };
 
 // Leadership SECTION
