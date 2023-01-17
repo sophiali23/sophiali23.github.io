@@ -47,7 +47,7 @@ const about = {
   imageSize: 375,
   message:
     "Hi! I'm a recent University of Waterloo graduate and software engineer with over 2 years of professional experience. I have a strong passion for creating great UX. I previously worked for Meta/Facebook full time and prior to that, I completed software engineering internships at MongoDB, Facebook, PagerDuty, Wattpad, and a couple startups. In my free time, I love to do pilates, travel, and spend time with my cat Alfie.",
-  resume: "https://drive.google.com/file/d/1PlQPbNersJ0DzQ8t6nLBW45oLd_yrgCL/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1UITYz5kc1HjezG1svH8xH5gGwNrmw4kv/view?usp=sharing",
 };
 
 const work = {
