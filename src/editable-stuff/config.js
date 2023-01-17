@@ -123,7 +123,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full stack or front end sofware engineering opportunities! If you know of any positions available, please feel free to email me at",
+    "I'm currently looking for full stack or front end software engineering opportunities! If you know of any positions available, please feel free to email me at",
   email: "sophiali99723@gmail.com",
 };
 
