@@ -15,10 +15,10 @@ const mainBody = {
       image: "fa-github",
       url: "https://github.com/sophiali23",
     },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/li.sophia/",
-    },
+    // {
+    //   image: "fa-instagram",
+    //   url: "https://www.instagram.com/li.sophia/",
+    // },
     {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/sophiali23/",
@@ -46,7 +46,7 @@ const about = {
   imageLink: require("../editable-stuff/sophiali.jpg"),
   imageSize: 375,
   message:
-    "Hi! I'm a recent University of Waterloo graduate and software engineer with over 2 years of professional experience. I have a strong passion for creating great UX. I previously worked for Meta/Facebook full time and prior to that, I completed software engineering internships at MongoDB, Facebook, PagerDuty, Wattpad, and a couple startups. In my free time, I love to do pilates, travel, and spend time with my cat Alfie.",
+    "Hi! I'm a University of Waterloo graduate and software engineer with over 5 years of professional experience. I currently work at Texas Instruments, and I have a strong passion for creating great UX. I previously worked for Meta/Facebook full time and prior to that, I completed software engineering internships at MongoDB, Facebook, PagerDuty, Wattpad, and a couple startups. In my free time, I love to do barre, play pickleball, travel, and spend time with my cat.",
   resume: "https://drive.google.com/file/d/1UITYz5kc1HjezG1svH8xH5gGwNrmw4kv/view?usp=sharing",
 };
 
@@ -123,7 +123,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full stack or front end software engineering opportunities! If you know of any positions available, please feel free to email me at",
+    "I'm currently looking for front end software engineering opportunities! If you know of any positions available, please feel free to email me at",
   email: "sophiali99723@gmail.com",
 };
 
@@ -131,6 +131,11 @@ const experiences = {
   show: true,
   heading: "Experiences",
   data: [
+    {
+      role: 'Software Engineer',
+      companylogo: require('../assets/img/ti.png'),
+      date: 'March 2023 - Present'
+    },
     {
       role: 'Software Engineer',// Here Add Company Name
       companylogo: require('../assets/img/meta.png'),
